@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MayBelt's</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+        <header>
+          <nav>
+
+            
+                <a class="logo" href="#"><img src="imagens/logo-belt's.png" class="img-logo"></a>
+                <div class="mobile-menu">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+                </div>
+                <!-- input de pesquisa-->
+                <div class="pesquisa">
+                  <input id="searchbar" type="text" name="searchbar" placeholder="Pesquisar Produtos" onkeyup="search()">
+                  <button id="button-pesquisa"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></button>
+                </div>
+              <!-- fim do input de pesquisa-->
+                <ul class="nav-list">
+                  <li><a class="ativo" href="#">Início</a></li>
+                  <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                  </svg></a></li>
+                </ul>
+          </nav>
+        </header>
+
+      <!--carrosel-->
+
+        <div class="container-slider">
+
+          <button id="prev-button"><svg class="img-seta" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg></button>
+
+          <div class="container-images">
+            <img src="imagens/slider.png" alt="girl" class="slider on">
+            <img src="imagens/slider2.png" alt="girl" class="slider">
+            <img src="imagens/slider3.png" alt="girl" class="slider">
+          </div>
+
+          <button id="next-button"><svg class="img-seta" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg></button>
+
+        </div>
+
+
+        <div id="filtro">
+          <div id="filtro-filho">
+            <label for="categoryFilter">Filtrar Produtos</label>
+            <select id="categoryFilter">
+              <option value="All">Todas as categorias</option>
+              <option value="Accessories - Belts">Acessórios - Cintos</option>
+              <option value="Accessories - Jewellery">Acessórios - Joias</option>
+              <option value="Accessories - Headwear">Acessórios - Chapéus</option>
+            </select>
+  
+          </div>
+        </div>
+       
+          
+        <!--Cards de produtos-->
+        <div id="box-cards">
+
+        <div id="tela">
+        </div>
+        <div id="tela2">
+        </div>
+        <div id="tela3">
+        </div>
+        
+        </div>
+
+       
+    
+
+        <footer>
+          <div id="footer-logo">
+            <a href="#"><img width="120px" src="imagens/logo-belt's.png" alt="manga.it"></a>
+            <span>© Copyright MayBelt's 2023 - Todos os direitos reservados</span>
+          </div>
+
+          <div id="footer-icons">
+            <a href=""><img width="30" src="imagens/whats-icon.png" alt=""></a>
+            <a href="https://instagram.com/mayckit_?igshid=ZDdkNTZiNTM="><img width="43" src="imagens/insta-icon.png" alt=""></a>
+            <a href=""><img width="30" src="imagens/twitter-icon.png" alt=""></a>
+          </div>
+
+          <div class="pagamento-icons">
+            <h3>formas de pagamento</h3>
+            <div id="icone-pagamentos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-credit-card-2-front-fill" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-x-diamond-fill" viewBox="0 0 16 16">
+              <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z"/>
+            </svg>
+           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+              <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+            </svg>
+            </div>
+
+            <div id="contato">
+              <h3>Contato</h3>
+              <span id="numero">(31)98223-6153</span>
+              <br>
+              <span>Nome: Michael Pires Passos</span><br>
+              <span>Curso: Sistemas de informação</span><br>
+              <span>Matricula: 825042</span>
+            </div>
+          </div>
+          
+        </footer>    
+
+
+    <script src="arquivo.js"></script>
+  </body>
+</html>
